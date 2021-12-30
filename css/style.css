@@ -1,0 +1,405 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+:root{
+    --primary-color: #231ADB;
+    --title-color: #2564A9;
+}
+
+
+body{
+    scroll-behavior: smooth;
+}
+/* estilos para o menu mobile */
+.menu-mobile{
+    position:fixed;
+    top:0;
+    left:0;
+    background-color: #060707;
+    border-radius:0 10px 10px 0;
+    height:100%;
+    width:70%;
+    z-index: 99999999;
+    transform: translateX(-200%);
+    transition: 0.1s ease-in-out;
+    overflow-y: scroll;
+    padding: 30px;
+}
+
+.menu-mobile .icones-menu i{
+    font-size: 28px;
+}
+
+.menu-mobile .icones-menu i:nth-child(1){
+    margin-right: 30px;
+    font-size: 28px;
+}
+
+.menu-mobile ul{
+    margin-top: 30px;
+    padding: 0;
+}
+
+.menu-mobile ul li{
+    list-style-type: none;
+}
+
+.menu-mobile a{
+    text-decoration:none;
+    color:white;
+    border-radius: 5px;
+    margin: 20px 0;
+    display: block;
+    font-size: 18px;
+    transition: 0.1 ease-in-out;
+}
+
+.menu-mobile .btn-wrapper a:hover{
+    filter: brightness(90%);
+}
+
+.bg{
+    width: 100vw;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99999;
+    display:none;
+}
+
+
+.menu-active{
+    transform: translateX(0) !important;
+}
+
+.menu-mobile p{
+    font-size:14px;
+    color:white;
+    margin-top: 30px;
+}
+/* fim dos estilos para o menu mobile */
+
+.hamburger{display: none;}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
+    background-color:rgb(248, 248, 248);
+    height:1px;
+}
+
+.hamburger-black, .hamburger-black:after, .hamburger-black:before{
+    background-color:black !important;
+}
+nav{
+    position: relative;
+    z-index: 10;
+    padding: 10px 100px 0 100px;
+    transition:0.1s ease-in-out;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+
+nav ul li a{
+    transition: 0.2s ease-in-out;
+    color: rgba(255, 255, 255, 0.801);
+    font-size:14px;
+}
+
+.btn-login{
+    padding: 9px;
+    background: #2564A9;
+    border-radius: 25px;
+    display: block;
+    max-width:130px;
+    width: 100%;
+    text-align: center;
+    color:white;
+    margin: 10px 0 15px 0;
+}
+a:hover{
+    color:white;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav ul li a{
+    margin:15px 0 0 0;
+    display: block;
+}
+
+.links-white{
+    color:rgb(0, 0, 0);
+}
+
+.nav-white{
+    background:rgb(255, 255, 255);
+    position:fixed;
+}
+
+.logo-nav{
+    display:none;
+}
+.max-w-logo{
+    max-width: 130px;
+    transition: 0.1s ease-in-out;
+}
+.max-w-fixed{
+    max-width: 100px;
+    transition: 0.1s ease-in-out;
+}
+header{
+    background:url(../images/bike.jpg);
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+    position: relative;
+}
+
+header:after{
+    content:"";
+    width: 100%;
+    height:100vh;
+    position:absolute;
+    right: 0;
+    left:0;
+    top:0;
+    background: rgba(0, 0, 0, 0.44);
+    z-index: 9  ;
+}
+
+.custom-border{
+    border-bottom: 1px solid white;
+}
+
+h1{
+    color:var(--primary-color);
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 56px;
+    padding-top: 85px;
+    text-align: center;
+}
+
+.hero-text{
+    position: relative;
+    z-index: 99;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text h6{
+    color:white;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.hero-text p{
+    color:white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.title{
+    color:var(--title-color);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.line-title{
+    position: relative;
+    display: inline-block;
+}
+
+.line-title:after{
+    content: "";
+    width: 35%;
+    height:2px;
+    background-color:var(--title-color);
+    position:absolute;
+    top: 30px;
+    left:0;
+    transition: 0.3s ease-in-out;
+}
+
+.title:hover.title:after{
+    width: 100%;
+}
+
+.content p{
+    font-size:14px;
+    color: #000000e0;
+    font-weight: 400;
+}
+
+.diferenciais__single h6{
+    color:#526178;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.diferenciais__single p{
+    color:#45464B;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.wrapper-icon{
+    margin-right: 10px;
+}
+
+section.newsletter{
+    background-image: url(../images/bike.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 40px 0;
+}
+.text{
+    margin-left: 15px;
+}
+section.newsletter .text h6{
+    font-size: 18px;
+    font-weight: 400;
+    color:white;
+}
+
+section.newsletter .text p{
+    margin-top: 8px;
+    font-size: 13px;
+    font-weight: 400;
+    color:white;
+}
+
+.form__wrapper{
+    position: relative;
+    display: inline-block;
+    max-width:500px;
+    width: 100%;
+}
+
+.form__wrapper button{
+    padding:17px;
+    max-width:102px;
+    width: 100%;
+    display: block;
+    border-radius: 25px;
+    color:white;
+    border:0;
+    background: #2564A9;
+    position:absolute;
+    top: 0;
+    right: -1px;
+}
+
+.form__input{
+    display: block;
+    max-width:500px;
+    width: 100%;
+    padding: 16px 27px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    color:white;
+}
+
+.form__input:focus{
+    outline:none;
+}
+section.newsletter ::placeholder{
+    color:white;
+}
+
+.link-whats{
+    color: rgba(0, 0, 0, 0.71);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.contact__form label{
+    color: rgba(0, 0, 0, 0.69);
+    font-size:14px;
+}
+
+.contact__form-input{
+    max-width:370px;
+    width: 100%;
+    display: block;
+    padding: 8px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+.contact__form-input:focus{
+    outline:none;
+}
+
+textarea{
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    max-width:370px;
+    width: 100%;
+    display: block;
+    padding: 20px;
+    height:138px;
+    resize: vertical;
+}
+textarea:focus{
+    outline:none;
+}
+
+.btn-submit{
+    padding:13px;
+    color:white;
+    background: #2564A9;
+    border-radius: 25px;
+    max-width:220px;
+    width: 100%;
+    display: block;
+    border: 0;
+    margin-top: 20px;
+}
+
+.link-whats:hover{color: rgba(0, 0, 0, 0.71);}
+
+
+footer{
+    background: #2A2942;
+    padding:30px 0;
+}
+
+footer p{
+    text-align:center;
+    color:white;
+    margin-top: 20px;
+}
+
+
+
+@media screen and (max-width: 1000px){
+    .hamburger{display: block;}
+    .desktop{display:none;}
+    .mobile-hamburger{
+        display: flex;
+        justify-content:end;
+    }
+    nav{
+        padding: 10px 50px 0 50px;
+    }
+}
+
