@@ -34,10 +34,86 @@ const observer = new IntersectionObserver(entries =>{
        
     })
 
-    console.log(entries)
 });
 
 observer.observe(titleObserver)
+
+//observer na home
+let home = document.querySelector('#home');
+let observeHome = new IntersectionObserver(entries =>{
+    entries.forEach(entry =>{
+       if(entry.isIntersecting){
+           links[0].classList.add('link-active');
+       }else{
+        links[0].classList.remove('link-active');
+       }
+    })
+},{
+    threshold:0.2,
+})
+
+observeHome.observe(home)
+
+//observar sobre
+let sobre = document.querySelector('#sobre');
+let observeSobre = new IntersectionObserver(entries =>{
+    entries.forEach(entry =>{
+       if(entry.isIntersecting){
+           links[1].classList.add('link-active');
+       }else{
+        links[1].classList.remove('link-active');
+       }
+    })
+},{
+    threshold:0.3,
+})
+observeSobre.observe(sobre)
+
+//observar diferenciais
+let diferenciais = document.querySelector('#diferenciais');
+let observeDiferenciais = new IntersectionObserver(entries =>{
+    entries.forEach(entry =>{
+       if(entry.isIntersecting){
+           links[2].classList.add('link-active');
+       }else{
+        links[2].classList.remove('link-active');
+       }
+    })
+},{
+    threshold:0.9,
+})
+observeDiferenciais.observe(diferenciais)
+
+//observar curso
+let curso = document.querySelector('.newsletter');
+let observeCurso = new IntersectionObserver(entries =>{
+    entries.forEach(entry =>{
+       if(entry.isIntersecting){
+           links[3].classList.add('link-active');
+       }else{
+        links[3].classList.remove('link-active');
+       }
+    })
+},{
+    threshold:0.3,
+})
+observeCurso.observe(curso)
+
+let contato = document.querySelector('footer');
+let observeContato = new IntersectionObserver(entries =>{
+    entries.forEach(entry =>{
+       if(entry.isIntersecting){
+           links[4].classList.add('link-active');
+       }else{
+        links[4].classList.remove('link-active');
+       }
+    })
+},{
+    threshold:0.8,
+})
+observeContato.observe(contato)
+
+
 
 //script para acionar o menu mobile
 let burger = document.querySelector('.hamburger');
@@ -58,7 +134,23 @@ burger.addEventListener('click', ()=>{
    }
 });
 
+//spy navs
+const spyScrolling = ( ) => {
+    const sections = document.querySelectorAll( '.spy' );
+  
+    window.onscroll = ( ) => {
+      const scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
+  
+      for ( let s in sections )
+        if ( sections.hasOwnProperty( s ) && sections[ s ].offsetTop <= scrollPos ) {
+          const id = sections[ s ].id;
+          document.querySelector( '.link-active' ).classList.remove( 'link-active' );
+          document.querySelector( `a[href*=${ id }]` ).parentNode.classList.add( 'link-active' );
+        }
+    }  
+}
 
+// spyScrolling();
 
 //fechar ao clicar no bg
 

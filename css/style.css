@@ -96,7 +96,7 @@ body{
 nav{
     position: relative;
     z-index: 10;
-    padding: 10px 100px 0 100px;
+    padding: 10px 150px 0 150px;
     transition:0.1s ease-in-out;
     position:fixed;
     top: 0;
@@ -118,7 +118,7 @@ nav ul li a{
 
 .btn-login{
     padding: 9px;
-    background: #2564A9;
+    background: #2565a9e7;
     border-radius: 25px;
     display: block;
     max-width:130px;
@@ -126,18 +126,27 @@ nav ul li a{
     text-align: center;
     color:white;
     margin: 10px 0 15px 0;
-}
-a:hover{
-    color:white;
-}
-
-a{
+    transition: 0.1s ease-in-out;
     text-decoration: none;
 }
+.btn-login:hover{
+    color:white;
+    background: #2565a9;
+}
+nav ul li a:hover{
+    opacity:1;
+    color:var(--primary-color);
+}
+
 
 nav ul li a{
     margin:15px 0 0 0;
     display: block;
+    text-decoration: none;
+}
+
+.link-active{
+    border-bottom: 1px solid var(--primary-color);
 }
 
 .links-white{
@@ -147,6 +156,7 @@ nav ul li a{
 .nav-white{
     background:rgb(255, 255, 255);
     position:fixed;
+    padding: 10px 100px 0 100px;
 }
 
 .logo-nav{
@@ -396,9 +406,10 @@ footer p{
     .desktop{display:none;}
     .mobile-hamburger{
         display: flex;
-        justify-content:end;
+        justify-content:space-between;
+        width: 100%;
     }
-    nav{
+    nav, .nav-white{
         padding: 10px 50px 0 50px;
     }
 }
