@@ -27,6 +27,19 @@ body{
     overflow-y: scroll;
     padding: 30px;
 }
+.btn-login-mobile{
+    padding: 9px;
+    background: #2565a9e7;
+    border-radius: 25px !important;
+    display: block;
+    max-width:130px;
+    width: 100%;
+    text-align: center;
+    color:white;
+    margin: 10px 0;
+    transition: 0.1s ease-in-out;
+    text-decoration: none;
+}
 
 .menu-mobile .icones-menu i{
     font-size: 28px;
@@ -128,6 +141,7 @@ nav ul li a{
     margin: 10px 0 15px 0;
     transition: 0.1s ease-in-out;
     text-decoration: none;
+    margin-left: 20px;
 }
 .btn-login:hover{
     color:white;
