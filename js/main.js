@@ -134,23 +134,6 @@ burger.addEventListener('click', ()=>{
    }
 });
 
-//spy navs
-const spyScrolling = ( ) => {
-    const sections = document.querySelectorAll( '.spy' );
-  
-    window.onscroll = ( ) => {
-      const scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
-  
-      for ( let s in sections )
-        if ( sections.hasOwnProperty( s ) && sections[ s ].offsetTop <= scrollPos ) {
-          const id = sections[ s ].id;
-          document.querySelector( '.link-active' ).classList.remove( 'link-active' );
-          document.querySelector( `a[href*=${ id }]` ).parentNode.classList.add( 'link-active' );
-        }
-    }  
-}
-
-// spyScrolling();
 
 //fechar ao clicar no bg
 
