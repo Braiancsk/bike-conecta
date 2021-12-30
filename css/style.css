@@ -109,7 +109,7 @@ body{
 nav{
     position: relative;
     z-index: 10;
-    padding: 10px 150px 0 150px;
+    padding: 10px 220px 0 220px;
     transition:0.1s ease-in-out;
     position:fixed;
     top: 0;
@@ -170,7 +170,7 @@ nav ul li a{
 .nav-white{
     background:rgb(255, 255, 255);
     position:fixed;
-    padding: 10px 100px 0 100px;
+    padding: 10px 200px 0 200px;
 }
 
 .logo-nav{
@@ -415,7 +415,7 @@ footer p{
 
 
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1024px){
     .hamburger{display: block;}
     .desktop{display:none;}
     .mobile-hamburger{

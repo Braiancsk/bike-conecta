@@ -49,7 +49,7 @@ let observeHome = new IntersectionObserver(entries =>{
        }
     })
 },{
-    threshold:0.2,
+    threshold:0.3,
 })
 
 observeHome.observe(home)
@@ -65,7 +65,7 @@ let observeSobre = new IntersectionObserver(entries =>{
        }
     })
 },{
-    threshold:0.3,
+    threshold:0.4,
 })
 observeSobre.observe(sobre)
 
@@ -95,7 +95,7 @@ let observeCurso = new IntersectionObserver(entries =>{
        }
     })
 },{
-    threshold:0.3,
+    threshold:1,
 })
 observeCurso.observe(curso)
 
