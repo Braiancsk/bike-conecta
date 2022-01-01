@@ -180,10 +180,7 @@ nav ul li a{
     max-width: 130px;
     transition: 0.1s ease-in-out;
 }
-.max-w-fixed{
-    max-width: 100px;
-    transition: 0.1s ease-in-out;
-}
+
 header{
     background:url(../images/bike.jpg);
     background-size: cover;
