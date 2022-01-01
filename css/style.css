@@ -12,6 +12,37 @@
 body{
     scroll-behavior: smooth;
 }
+
+/*classes auxiliares*/
+.wrapper-img{
+    height:max-content;
+    position: relative;
+}
+
+.wrapper__info{
+    background: rgba(0, 0, 0, 0.41);
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    color:white;
+}
+.wrapper__info h6{
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+}
+.wrapper__info p{
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+/*fim das classes auxiliares*/
+
+
 /* estilos para o menu mobile */
 .menu-mobile{
     position:fixed;
