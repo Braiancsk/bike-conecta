@@ -80,18 +80,34 @@ let observeDiferenciais = new IntersectionObserver(entries =>{
        }
     })
 },{
-    threshold:0.9,
+    threshold:1,
 })
 observeDiferenciais.observe(diferenciais)
+
+
+//observar precos
+let precos = document.querySelector('#precos');
+let observePrecos = new IntersectionObserver(entries =>{
+    entries.forEach(entry =>{
+       if(entry.isIntersecting){
+           links[3].classList.add('link-active');
+       }else{
+        links[3].classList.remove('link-active');
+       }
+    })
+},{
+    threshold:0.5,
+})
+observePrecos.observe(precos)
 
 //observar curso
 let curso = document.querySelector('.newsletter');
 let observeCurso = new IntersectionObserver(entries =>{
     entries.forEach(entry =>{
        if(entry.isIntersecting){
-           links[3].classList.add('link-active');
+           links[4].classList.add('link-active');
        }else{
-        links[3].classList.remove('link-active');
+        links[4].classList.remove('link-active');
        }
     })
 },{
@@ -103,9 +119,9 @@ let contato = document.querySelector('footer');
 let observeContato = new IntersectionObserver(entries =>{
     entries.forEach(entry =>{
        if(entry.isIntersecting){
-           links[4].classList.add('link-active');
+           links[5].classList.add('link-active');
        }else{
-        links[4].classList.remove('link-active');
+        links[5].classList.remove('link-active');
        }
     })
 },{
