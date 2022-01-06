@@ -469,11 +469,15 @@ footer p{
     color:white;
     padding:8px;
     background:#3f3e64;
-  
+    justify-content: center;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
 }
-.preco__wrapper h4{
+.preco__wrapper, .preco__wrapper2 h4{
     font-size:20px;
 }
+
 .preco__wrapper2, .preco__wrapper p{
     font-size:12px;
     margin: 0;      
