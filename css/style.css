@@ -441,10 +441,11 @@ footer p{
 }
 
 .bg-title{
-    padding:10px;
+    padding:15px;
     text-align:center;
     color:white;
     margin: 0;
+    font-weight: 400;
 }
 
 .bg-title2{
@@ -452,6 +453,7 @@ footer p{
     text-align:center;
     color:white;
     margin: 0;
+    font-weight: 400;
 }
 
 .preco__wrapper{
@@ -470,7 +472,7 @@ footer p{
     padding:8px;
     background:#3f3e64;
     justify-content: center;
-    height: 100px;
+    height: 80px;
     display: flex;
     flex-direction: column;
 }
@@ -478,9 +480,13 @@ footer p{
     font-size:20px;
 }
 
-.preco__wrapper2, .preco__wrapper p{
+.preco__wrapper2 p{
     font-size:12px;
     margin: 0;      
+}
+.preco__wrapper p{
+    font-size:12px; 
+    margin: 0;
 }
 
 .precos__items{
@@ -502,7 +508,8 @@ footer p{
     margin: 20px 0;
     box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
     position: relative;
-    top: -10px;
+    top: -6px;
+    height: 430px;
 }
 .select-bg-2{
     background:#2A2942;
@@ -514,9 +521,7 @@ footer p{
 section.precos .row{
     gap: 10px;
 }
-section.precos > .container{
-    padding: 0 4%;
-}
+
 .precos a{
     text-decoration: none;
     color:white;
@@ -545,6 +550,10 @@ section.precos > .container{
         position: relative;
         top: 0;
         width: 100%;
+        height:auto;
+    }
+    section.precos > .container{
+        padding: 0 4%;
     }
 }
 
