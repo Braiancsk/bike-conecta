@@ -482,12 +482,14 @@ footer p{
     background:var(--primary-color);
     padding: 20px 0;
     margin: 20px 0;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
 
 }
 .select-bg-2{
     background:var(--title-color);
     margin: 20px 0;
     max-width: 300px;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
 }
 section.precos .row{
     gap: 10px;
