@@ -441,7 +441,14 @@ footer p{
 }
 
 .bg-title{
-    padding:8px;
+    padding:10px;
+    text-align:center;
+    color:white;
+    margin: 0;
+}
+
+.bg-title2{
+    padding:20px;
     text-align:center;
     color:white;
     margin: 0;
@@ -451,19 +458,25 @@ footer p{
     text-align:center;
     color:white;
     padding:8px;
-    background:var(--title-color);
+    background:#3f3e64;
+    justify-content: center;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
 }
 .preco__wrapper2{
     text-align:center;
     color:white;
     padding:8px;
-    background:#2c74c3;
+    background:#3f3e64;
+  
 }
 .preco__wrapper h4{
     font-size:20px;
 }
 .preco__wrapper2, .preco__wrapper p{
     font-size:13px;
+    margin: 0;
 }
 
 .precos__items{
@@ -471,25 +484,28 @@ footer p{
     text-align:center;
 }
 .precos__items p{
-    padding-top: 5px;
+    padding: 8px 0;
     padding-left:2%;
     padding-right:2%;
     border-top: 1px solid #ccc;
     font-size: 14px;
+    margin: 0;
 }
 
 .select-bg{
-    background:var(--primary-color);
+    background:#2A2942;
     padding: 20px 0;
     margin: 20px 0;
     box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
-
+    position: relative;
+    top: -13px;
 }
 .select-bg-2{
-    background:var(--title-color);
+    background:#2A2942;
     margin: 20px 0;
-    max-width: 300px;
+    max-width: 280px;
     box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+    height: 400px;
 }
 section.precos .row{
     gap: 10px;
@@ -503,7 +519,7 @@ section.precos > .container{
     text-align:center;
     display:block;
     margin-top:15px;
-    background: #2A2942;
+    background: #353453;
     padding:8px;
     border-radius: 8px;
 }
@@ -519,6 +535,12 @@ section.precos > .container{
     }
     nav, .nav-white{
         padding: 10px 50px 0 50px;
+    }
+    
+    .select-bg{
+        position: relative;
+        top: 0;
+        width: 100%;
     }
 }
 
