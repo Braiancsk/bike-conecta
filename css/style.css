@@ -475,8 +475,8 @@ footer p{
     font-size:20px;
 }
 .preco__wrapper2, .preco__wrapper p{
-    font-size:13px;
-    margin: 0;
+    font-size:12px;
+    margin: 0;      
 }
 
 .precos__items{
