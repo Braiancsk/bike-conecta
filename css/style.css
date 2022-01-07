@@ -460,7 +460,7 @@ footer p{
     text-align:center;
     color:white;
     padding:8px;
-    background:#747067;
+    background:#3f3e64;
     justify-content: center;
     height: 100px;
     display: flex;
@@ -503,7 +503,7 @@ footer p{
 }
 
 .select-bg{
-    background:#4F4C45;
+    background:#2a2942;
     padding: 20px 0;
     margin: 20px 0;
     box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
